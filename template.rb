@@ -1,7 +1,5 @@
 require 'bbs2ch.rb'
 
-#@thread = BBS2ch::Thread.new("http://pele.bbspink.com/test/read.cgi/okama/1327719321/l50")
-
 def setup(&block)
   @setups << block
 end
@@ -22,5 +20,5 @@ end
 @args.each do |item|
   response = @thread.postMessage(item, @mail)
   puts response.body.toutf8
-  sleep(15)
+  sleep(@thread.board.samba24.to_i)
 end
