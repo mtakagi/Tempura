@@ -1,0 +1,7 @@
+setup do
+  @thread_url = ""
+  @mail = "age"
+end
+
+
+tempura ["テンプレ", "テンプラ", "テンプル"]
